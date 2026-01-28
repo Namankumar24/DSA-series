@@ -11,6 +11,8 @@ int fact(int x) {
 
 int main() {
     int n, temp, sum = 0;
+
+    cout<<"Enter the number : ";
     cin >> n;
     temp = n;
 
@@ -20,8 +22,11 @@ int main() {
         n /= 10;
     }
 
-    if(sum == temp)
+    if(sum == temp) {
         cout << "Strong Number";
-    else
+    }
+    else{
         cout << "Not Strong Number";
+    }
+
 }
