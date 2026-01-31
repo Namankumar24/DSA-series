@@ -4,6 +4,7 @@ using namespace std;
 
 int main() {
     int n, sq;
+    cout<<"Enter the number n : ";
     cin >> n;
     sq = n * n;
 
@@ -13,8 +14,8 @@ int main() {
             cout << "Not Automorphic";
             return 0;
         }
-        temp /= 10;
-        sq /= 10;
+        temp /= 10; // temp = temp / 10
+        sq /= 10;   // sq = sq / 10
     }
 
     cout << "Automorphic Number";
